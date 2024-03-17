@@ -14,14 +14,11 @@ class AgenteSimples:
     def mover_para_direita(self):
         self.posicao_atual = (self.posicao_atual[0], self.posicao_atual[1] + 1)
 
-# Definição da posição inicial e do ponto de destino
 posicao_inicial = (0, 0)
 ponto_destino = (3, 6)
 
-# Criando o agente
 agente = AgenteSimples(posicao_inicial)
 
-# Movendo o agente em direção ao ponto de destino
 print("Posição inicial do agente:", agente.posicao_atual)
 while agente.posicao_atual != ponto_destino:
     if agente.posicao_atual[0] < ponto_destino[0]:
